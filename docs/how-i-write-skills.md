@@ -51,7 +51,7 @@ The main thread orchestrates and never does the heavy reading. Each unit of work
 > "Main thread (any model): orchestrate only. Never open a PDF, never read MM XML, never drive a browser. ~200 tokens per statement." ([mm-file](../skills/mm-file/SKILL.md))
 
 ```mermaid
-flowchart LR
+flowchart TD
   A[Main thread] --> B[List new statements]
   B --> C[One filer agent per statement]
   C --> D[Extract text and file rows]
